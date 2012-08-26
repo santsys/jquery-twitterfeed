@@ -7,11 +7,6 @@
 		user - The twitter user
 		num - The number of tweets to display
 
-	CSS:
-		div.tweet - Main tweet container
-		div.image - User profile image
-		div.text - Tweet content
-
 	Documentaion on the twitter feeds here:
 	https://dev.twitter.com/docs/api/1/get/statuses/user_timeline
 */
