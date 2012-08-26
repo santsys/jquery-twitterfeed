@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+	<title>Twitter Test</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="jquery.twitterfeed.js"></script>
+	<script type="text/javascript">
+
+		(function ($) {
+
+			$(document).ready(function () {
+
+				loadTweets($('#user_name').val());
+				
+				$('#t-load').click(function () {
+					loadTweets($('#user_name').val());
+				});
+
+			});
+
+		})(jQuery);
+
+		function loadTweets(user) {
+			$('#twitter-feed').twitterfeed({
+				'user': user,
+				'num': 10
+			});
+		}
+	</script>
+
+	<style type="text/css">
+		body { font-size: 12px; color: #777; }
+		#twitter-feed { width: 300px; }
+		#twitter-feed .twitter-loading { color: #777; }	
+	</style>
+</head>
+<body>
+
+	<form>
+		Twitter User Name (e.g. santsys): <input type="text" id="user_name" style="width: 100px;" value="santsys" />&nbsp;<input type="button" value="Load..." id="t-load" />
+	</form>
+	<br />
+	<div id="twitter-feed">
+		<span class="twitter-loading">Loading...</span>&nbsp;<img src="http://www.santsys.com/images/ajax-loader-arrows.gif" alt="" />
+	</div>
+</body>
+</html>

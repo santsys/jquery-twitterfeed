@@ -1,0 +1,28 @@
+.clear { clear: both; }
+.tweet, .tweet a, .tweet span, .tweet div { font: normal normal normal 12px/16px "Helvetica Neue",Arial,sans-serif; color: #777; }
+.tweet { padding: .25em; border: 1px solid #EEE; border-radius: 5px; max-width:500px; margin-bottom: .25em; min-width: 300px; }
+.tweet .t-head a, .tweet .t-head a span { text-decoration: none; color: #333; line-height: 18px; }
+.tweet .t-head .t-avatar { position: absolute; }
+.tweet .t-head .t-avatar img { border-radius: 4px; }
+.tweet .t-head .t-name { margin-left: 53px; margin-top: 8px; float: left; font-size: 16px; font-weight: bold; }
+.tweet .t-head a:hover span.t-name { text-decoration: underline; }
+.tweet .t-head .t-nickname { margin-left: 53px; float: left; clear: both; color: #999; font-size: 11px; }
+.tweet .t-body { clear: both; margin-top: 55px; }
+.tweet .t-content { color: #333; line-height: 18px; font-size: 14px; }
+.tweet .t-content a { line-height: 18px; font-size: 14px; color: #2FC2EF; text-decoration: none; }
+.tweet .t-content a:hover { text-decoration: underline; }
+.tweet .t-foot { margin-top: 6px; }
+.tweet .t-foot a.t-details { color: #777; text-decoration: none; }
+.tweet .t-foot a:hover.t-details { color: #999; text-decoration: underline; }
+.tweet .t-foot .t-actions { clear: both; float: right; margin: 0; padding: 0; }
+.tweet .t-foot .t-actions li { float: left; list-style-type: none; list-style-position: outside; margin-left: .2em;}
+.tweet .t-foot .t-actions li * { float: left; font-weight: normal; }
+.tweet .t-foot .t-actions i { background: transparent url(https://platform.twitter.com/embed/sprite.png) no-repeat 0px 0px; } 
+.tweet .t-foot .t-actions a, .tweet .t-foot .t-actions a b { color: #999; text-decoration: none; }
+.tweet .t-foot .t-actions a:hover, .tweet .t-foot .t-actions a:hover b { color: #777; text-decoration: underline; }
+.tweet .t-foot .t-actions a.t-reply i { background-position: 0 -30px; height: 13px; width: 18px; margin: 1px 5px 0 8px; } 
+.tweet .t-foot .t-actions a.t-retweet i { background-position: 0 -48px; height: 13px; width: 22px; margin: 1px 5px 0 8px; } 
+.tweet .t-foot .t-actions a.t-favorite i { background-position: 0 -66px; height: 15px; width: 16px; margin: 0 5px 0 8px; }
+.tweet .t-foot .t-actions a:hover.t-reply i { background-position: -23px -30px; } 
+.tweet .t-foot .t-actions a:hover.t-retweet i { background-position: -27px -48px; } 
+.tweet .t-foot .t-actions a:hover.t-favorite i { background-position: -21px -66px; }
